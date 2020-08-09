@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "greenPastureCollege"
+    }
+  },
+  "defaultProject": "greenPastureCollege",
+  "cli": {
+    "analytics": "797247cf-3e1e-4dbf-b87f-86a590476615"
+  }
 }

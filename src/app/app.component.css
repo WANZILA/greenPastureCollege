@@ -44,6 +44,10 @@ a#top-apply:active{
 
 
         /***************************navbar***************************************/
+    
+img#logo {
+       width: 150px;
+   }
 nav.bg-light {
           background-color: rgba(0, 102, 0, 1) !important;
     }

@@ -1,0 +1,44 @@
+div.card-body-edit{
+    padding:0rem;
+}
+
+p.card-text.p-edit {
+    margin-top: 0.1rem;
+    margin-bottom: 0rem;
+}
+
+@media(max-width: 575.98px){
+ 
+  
+  
+}
+
+
+@media (min-width: 576px)and (max-width:767.98px){
+
+
+   
+   
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .form-check {
+        display: inline-block;
+    }
+    
+}
+
+
+@media(min-width: 992px) and (max-width:1199.98px){
+    .form-check {
+        display: inline-block;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .form-check {
+        display: inline-block;
+    }
+
+}
