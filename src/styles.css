@@ -2,12 +2,39 @@
 /* @import "~bootstrap/dist/css/bootstrap.css"; */
 
 body{
-    margin: 0;
+    min-width: 300px; 
+    margin: auto;
     font-family: sans-serif;
-    font-weight: 300;
+    font-size: 0.9rem;
+    font-weight: 400;
     line-height: 21px;    
     overflow-x:hidden;
 }
+
+.containerBackgroundColor{
+   background-color:rgb(246,246,246);
+  
+}
+
+.containerMargins{
+    padding-top: 14px;
+    padding-bottom: 9px;
+}
+
+
+/******Forms elements*********/
+button,input,textarea,select{
+    font-family:inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+textarea{
+    overflow: auto;
+}
+
 
 @media(max-width: 575.98px){
  
@@ -24,16 +51,27 @@ body{
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){
+    .containerMargins{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
     
 }
 
 
 @media(min-width: 992px) and (max-width:1199.98px){
-
+    .containerMargins{
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
 
 }
 
 @media (min-width: 1200px){
-    
+    .containerMargins{
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+  
 
 }

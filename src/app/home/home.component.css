@@ -1,11 +1,89 @@
 div.card-body-edit{
     padding:0rem;
 }
+.card {
+    
+    border: none;
+    border-radius: 0rem;
+    background-color: rgb(11,102,7);
+}
+.card-title {
+    margin-bottom: 0rem;
+}
 
 p.card-text.p-edit {
     margin-top: 0.1rem;
     margin-bottom: 0rem;
 }
+
+/* form styling*/
+input[type="sumbit"]{
+    background-color:rgba(255, 255, 0, 1);
+    color:rgb(11,102,7);
+}
+
+input[type="sumbit"]:hover{
+    background-color: rgb(11,102,7);
+    color: rgba(255, 255, 0, 1);
+}
+
+/************************TEXT***/
+.h2, h2 {
+    font-size: 1.5rem;
+}
+
+hr {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+
+a.apply-options {
+    color: rgb(11,102,7);
+    text-decoration: underline;
+}
+a.apply-options:visted {
+    color:rgba(255, 255, 0, 0.8);
+}
+a.apply-options:hover,a.apply-options:active  {
+    color: rgba(11,102,7,.6);
+    text-decoration: underline;
+}
+
+/**********forms*****************/
+.btn-primary {
+    color: rgb(244,244,1);
+    background-color: rgb(11,102,1);
+    border-color: rgb(11,102,7); 
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: rgb(11,102,1);
+    background-color:rgb(244,244,1);
+    border-color: rgb(244,244,1);
+}
+.btn-primary:hover {
+    color: rgb(244,244,1);
+    background-color:rgb(11,102,1);
+    border-color: rgb(11,102,1); 
+}
+
+legend {    
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+fieldset {
+    /* max-width: 100%; */
+    padding: 0px 0px 0px 15px;
+
+}
+.form-check {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
 
 @media(max-width: 575.98px){
  
