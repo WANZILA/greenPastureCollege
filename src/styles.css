@@ -1,17 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import "~bootstrap/dist/css/bootstrap.css"; */
-/* html{
-    font-size: 20px;
-    font-style: normal;
+/* @font-face{
+    font-family:"Lemonada";
+     src: url("myFont.woff");
 } */
+
+html{
+    font-family: Lemonada, sans-serif;
+    font-size: 20px;    
+}
 
 body{
     min-width: 300px; 
     margin: auto;
-    font-family: sans-serif;
+    font-family: 'Roboto',sans-serif;    
     font-size: 0.9rem;
     font-weight: 400;
-    line-height: 21px;    
+    line-height: 30px;    
     overflow-x: hidden;
 }
 
