@@ -29,3 +29,8 @@ footer a:active {
     text-decoration: underline;
 }
 
+
+footer .list-group-item {    
+    padding: .1rem 1.25rem;
+}
+

@@ -1,3 +1,4 @@
+styles.css 
 /* You can add global styles to this file, and also import other style files */
 /* @import "~bootstrap/dist/css/bootstrap.css"; */
 /* @font-face{
@@ -5,19 +6,15 @@
      src: url("myFont.woff");
 } */
 
-html{
-    font-family: Lemonada, sans-serif;
-    font-size: 20px;    
-}
-
-body{
-    min-width: 300px; 
+html, body{
     margin: auto;
-    font-family: 'Roboto',sans-serif;    
-    font-size: 0.9rem;
-    font-weight: 400;
-    line-height: 30px;    
-    overflow-x: hidden;
+    font-family: 'Roboto',sans-serif;
+    min-width: 300px;     
+    font-family: Lemonada, sans-serif;
+    font-size: 13px; 
+    font-weight: 200;
+    line-height: 15px;    
+    overflow-x: auto;  
 }
 
 .containerBackgroundColor{
@@ -30,6 +27,36 @@ body{
     padding-bottom: 9px;
 }
 
+
+
+/************************TEXT***/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lemonada', cursive, sans-serif; 
+    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+}
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+hr {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+
+/************heading of h1 admission,library, student life ***/
+.titles-color{
+    background-color:rgb(244,244,1);
+    height: 40px;
+}
+.titles-color h1{
+    padding: 5px 0px 5px;
+    line-height: 1.5rem;
+}
+
 .img-fit{
     object-fit: contain;
 }
@@ -38,7 +65,7 @@ body{
 /******Forms elements*********/
 button,input,textarea,select{
     font-family:inherit;
-    font-size: 100%;
+    font-size: inherit;
     box-sizing: border-box;
     padding: 0;
     margin:0;
@@ -50,16 +77,21 @@ textarea{
 
 
 @media(max-width: 575.98px){
- 
-  
+    /* body{
+        font-size: 0.3rem;
+        font-weight: 400;
+        line-height: 30px;    
+        overflow-x: auto;
+    }
+     */
   
 }
 
 
 @media (min-width: 576px)and (max-width:767.98px){
-
-
-   
+    h1, h2, h3, h4, h5, h6{
+        font-size:0.7rem;
+    } 
    
 }
 
@@ -68,7 +100,23 @@ textarea{
         padding-top: 20px;
         padding-bottom: 10px;
     }
+
+    /************************TEXT***/
+    h1, h2, h3, h4, h5, h6 {
+         font-size: 1rem;
+         margin-bottom: 1.5rem;
+    }
+     
     
+    /************heading of h1 admission,library, student life ***/
+    .titles-color{
+        height: 100px;
+    }
+    .titles-color h1{
+        padding: 30px 0px 30px;
+        line-height: 1.5rem;
+    }
+        
 }
 
 
@@ -77,6 +125,21 @@ textarea{
         padding-top: 40px;
         padding-bottom: 15px;
     }
+       /************************TEXT***/
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    /************heading of h1 admission,library, student life ***/
+    .titles-color{
+        height: 100px;
+    }
+    .titles-color h1{
+        padding: 30px 0px 30px;
+        line-height: 1.5rem;
+    }
+
+
 
 }
 
@@ -85,6 +148,20 @@ textarea{
         padding-top: 50px;
         padding-bottom: 20px;
     }
+    /************************TEXT***/
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    /************heading of h1 admission,library, student life ***/
+    .titles-color{
+        height: 100px;
+    }
+    .titles-color h1{
+        padding: 30px 0px 30px;
+        line-height: 1.5rem;
+    }
+
   
 
 }

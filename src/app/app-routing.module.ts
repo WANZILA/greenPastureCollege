@@ -9,9 +9,13 @@ const routes: Routes = [
   {
     path:'home', component: HomeComponent
   },
-  // {
-  //   path:'about', component: AboutUsComponent
-  // },
+  {
+    path:'fees-tuition-payments', 
+    data: { preload: true },
+    loadChildren:() =>
+    import('./admission/admission.module')
+       .then(m => m.AdmissionModule)
+  },
   {
     path:'', redirectTo:'/home', pathMatch: 'full'
   },

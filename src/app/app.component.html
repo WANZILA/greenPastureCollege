@@ -11,13 +11,13 @@
 <section id="container-top">
   <div class="container-fluid">
     <div class="row top-row">
-        <div class="col-md-6 container-inner align-self-center">
+        <div class="col-md-7 container-inner align-self-center">
             <ul class="top-ul">
               <li class="top-contacts"><b> +256-772-986-753</b></li>
               <li class="top-contacts"> <b>+256-782-049-952</b></li>
             </ul>
         </div>
-        <div class="col-md-6 align-self-center">
+        <div class="col-md-5 align-self-center">
           <span class="top-span">
             <a id ="top-apply" href="#" target="_blank"> Apply Now </a>
           </span>
@@ -27,7 +27,7 @@
 </section>
 
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="../assets/index/logo.png" class="img-fluid">
@@ -41,17 +41,28 @@
           <a class="nav-link " [routerLink]="['/home']" routerLinkActive="active"  aria-current="page">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']" routerLInkActive="active" >About</a>
+          <a class="nav-link" [routerLink]="['/about']" routerLinkActive="active" >About</a>
         </li>
          						 						
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']" routerLInkActive="active" >Governance</a>
+          <a class="nav-link" [routerLink]="['']" routerLinkActive="active" >Governance</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']" routerLInkActive="active" >Academics</a>
+          <a class="nav-link" [routerLink]="['/']" routerLinkActive="active" >Academics</a>
+        </li>
+        <li class="nav-item dropdown">
+          <!-- " -->
+          <a class="nav-link dropdown-toggle" id="admissionsDropdownMenu" role="button" data-toggle="dropdown" aira-expanded="false" 
+              [routerLink] ="['/fees-tuition-payments']" routerLinkActive="active" >Admissions
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="admissionsDropdownMenu">
+            <li><a class="dropdown-item" [routerLink]="['/fees-tuition-payments']" >Fees and Tuition Payment
+              </a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']" routerLInkActive="active" >Student Life Research</a>
+          <a class="nav-link" [routerLink]="['/about']" routerLInkActive="active" >Student Life </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">

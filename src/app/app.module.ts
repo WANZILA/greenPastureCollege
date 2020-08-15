@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AboutModule } from './about/about.module';
+// import { AdmissionModule} from './admission.module';
 import { FooterComponent } from './footer/footer.component';
+import { AdmissionModule } from './admission/admission.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AboutModule,
+    AdmissionModule,
     AppRoutingModule
   ],
   providers: [],
