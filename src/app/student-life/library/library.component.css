@@ -1,0 +1,13 @@
+/* .row {
+    margin-top: 10px;
+} */
+.card-title {
+    font-size: 14px;
+}
+.card-group>.card {
+    margin-top: 15px;
+}
+.card-img-top {
+   width: 60%;
+}
+
