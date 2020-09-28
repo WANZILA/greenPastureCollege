@@ -9,6 +9,7 @@ import { AboutModule } from './about/about.module';
 // import { AdmissionModule} from './admission.module';
 import { FooterComponent } from './footer/footer.component';
 import { AdmissionModule } from './admission/admission.module';
+import { StudentLifeModule } from './student-life/student-life.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AdmissionModule } from './admission/admission.module';
     BrowserModule,
     AboutModule,
     AdmissionModule,
+    StudentLifeModule,
     AppRoutingModule
   ],
   providers: [],

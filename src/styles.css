@@ -1,4 +1,4 @@
-styles.css 
+
 /* You can add global styles to this file, and also import other style files */
 /* @import "~bootstrap/dist/css/bootstrap.css"; */
 /* @font-face{
@@ -6,16 +6,33 @@ styles.css
      src: url("myFont.woff");
 } */
 
-html, body{
+/* html, body{
     margin: auto;
     font-family: 'Roboto',sans-serif;
     min-width: 300px;     
-    font-family: Lemonada, sans-serif;
-    font-size: 13px; 
+  font-family: Lemonada, sans-serif; 
+    font-size: calc(0.6rem + .6vw); 
     font-weight: 200;
-    line-height: 15px;  
-    text-align: justify;  
-    overflow-x: auto;  
+    line-height: calc(1rem + .1vw);  
+    text-align:left; 
+   overflow: none  ; 
+     
+} */
+html{
+    font-size: 14px;
+    font-weight: 200px;
+}
+
+body{
+    background-color:rgba(205,204,204,.09);
+    display:block;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.2rem;
+    color: rgb(0,0,0);
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+        
 }
 
 .containerBackgroundColor{
@@ -33,9 +50,17 @@ html, body{
 /************************TEXT***/
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lemonada', cursive, sans-serif; 
-    font-size: 0.9rem;
+    font-size: calc(0.9rem + .8vw);
+    text-align:left;
+    
     /* font-size: 1.5rem; */
 }
+
+.marginTop{
+    margin-top:calc(5px + 3vw);
+}
+
+
 p {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -48,9 +73,26 @@ hr {
     border-top: 1px solid rgba(0,0,0,.2);
 }
 
+/*********************************8links***/
+
+a.apply-options {
+    color: rgb(9,119,74);
+    text-decoration: none;
+    
+}
+a.apply-options:visted {
+    color:rgba(253,196,29, 0.8);
+    text-decoration: underline;
+}
+a.apply-options:focus, a.apply-options:hover,a.apply-options:active  {
+    color: rgba(9,119,74,.6);
+    background-color:rgba(253,196,29, 0.8);
+    text-decoration: underline;
+}
+
 /************heading of h1 admission,library, student life ***/
 .titles-color{
-    background-color:rgb(244,244,1);
+    background-color:rgb(253,196,29);
     height: 40px;
 }
 .titles-color h1{
@@ -75,10 +117,15 @@ button,input,textarea,select{
 textarea{
     overflow: auto;
 }
+/* cards */
+.card-header {
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 2px solid rgba(253,196,29,1);
+}
 
 .card-edit{
-    background-color: rgb(11,102,7);
-    border: 1px solid rgb(244,244,1);
+    background-color: rgb(9,119,74);
+    border: 1px solid rgb(253,196,29);
     width: 280px;
     overflow-x: auto !Important;
 }
@@ -89,8 +136,12 @@ textarea{
 /*************button links******/
 .btn-link {
     font-weight: 400;
-    color: rgb(244,244, 1);
+    color: rgb(253,196,29);
     text-decoration: none;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(253,196,29, .6);
 }
 .btn-link:hover {
     color:rgba(255, 255, 255, .7);
@@ -98,7 +149,7 @@ textarea{
 }
 
 table{
-    background-color:rgba(2444,244, 1, 0.9);
+    background-color:rgba(253,196, 29, 0.9);
 }
 
 
@@ -115,9 +166,9 @@ table{
 
 
 @media (min-width: 576px)and (max-width:767.98px){
-    h1, h2, h3, h4, h5, h6{
+    /* h1, h2, h3, h4, h5, h6{
         font-size:0.7rem;
-    } 
+    }  */
       /**************cards edit****/
       .card-edit{
         border: none;
@@ -142,10 +193,10 @@ table{
 
 
     /************************TEXT***/
-    h1, h2, h3, h4, h5, h6 {
+    /* h1, h2, h3, h4, h5, h6 {
          font-size: 1rem;
          margin-bottom: 1.5rem;
-    }
+    } */
      
     
     /************heading of h1 admission,library, student life ***/
@@ -169,20 +220,20 @@ table{
 
 
 @media(min-width: 992px) and (max-width:1199.98px){
-    html, body{
+    /* html, body{
         font-size: 17px;
         font-weight: 400;
         line-height: 17px;  
-    }
+    } */
     
     .containerMargins{
         padding-top: 40px;
         padding-bottom: 15px;
     }
        /************************TEXT***/
-    h1, h2,h3 {
+    /* h1, h2,h3 {
         font-size: 1.5rem;
-    }
+    } */
 
     /************heading of h1 admission,library, student life ***/
     .titles-color{
@@ -206,19 +257,19 @@ table{
 }
 
 @media (min-width: 1200px){
-    html, body{
+    /* html, body{
         font-size: 17px;
         font-weight: 300;
         line-height: 19px;  
-    }
+    } */
     .containerMargins{
         padding-top: 50px;
         padding-bottom: 20px;
     }
     /************************TEXT***/
-    h1, h2 {
+    /* h1, h2 {
         font-size: 1.5rem;
-    }
+    } */
 
     /************heading of h1 admission,library, student life ***/
     .titles-color{

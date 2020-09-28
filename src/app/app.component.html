@@ -8,79 +8,115 @@
   </div>  
 </div> -->
 
-<section id="container-top">
-  <div class="container-fluid">
-    <div class="row top-row">
-        <div class="col-md-7 container-inner align-self-center">
-            <ul class="top-ul">
-              <li class="top-contacts"><b> +256-772-986-753</b></li>
-              <li class="top-contacts"> <b>+256-782-049-952</b></li>
-            </ul>
-        </div>
-        <div class="col-md-5 align-self-center">
-          <span class="top-span">
-            <a id ="top-apply" href="#" target="_blank"> Apply Now </a>
-          </span>
-        </div>
+
+  <section id="container-top">
+    <div class="container-fluid">
+      <div class="row top-row">
+          <div class="col-md-7 container-inner align-self-center">
+              <ul class="top-ul">
+                <li class="top-contacts"><b> +256-772-986-753</b></li>
+                <li class="top-contacts"> <b>+256-782-049-952</b></li>
+              </ul>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <span class="top-span">
+              <a id ="top-apply" href="#" target="_blank"> Apply Now </a>
+            </span>
+          </div>
+      </div>
     </div>
-  </div>
-</section>
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="../assets/index/logo.png" class="img-fluid">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link " [routerLink]="['/home']" routerLinkActive="active"  aria-current="page">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']" routerLinkActive="active" >About</a>
-        </li>
-         						 						
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['']" routerLinkActive="active" >Governance</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/']" routerLinkActive="active" >Academics</a>
-        </li>
-        <li class="nav-item dropdown">
-          <!-- " -->
-          <a class="nav-link dropdown-toggle" id="admissionsDropdownMenu" role="button" data-toggle="dropdown" aira-expanded="false" 
-              [routerLink] ="['/fees-tuition-payments']" routerLinkActive="active" >Admissions
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="admissionsDropdownMenu">
-            <li><a class="dropdown-item" [routerLink]="['/fees-tuition-payments']" >Fees and Tuition Payment
+  </section>
+  
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <!-- <img src="../assets/index/logo.png" class="img-fluid"> -->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" >About</a>
+          </li>
+                                    
+         <li class="nav-item"> 
+            <a class="nav-link" [routerLink]="['']" routerLinkActive="active" >Governance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/']" routerLinkActive="active" >Academics</a>
+          </li>
+          <li class="nav-item dropdown">
+           
+            <a class="nav-link dropdown-toggle" id="admissionsDropdownMenu" role="button" data-toggle="dropdown" aria-expanded="false" 
+                [routerLink] ="['/payment']" routerLinkActive="active" >Admissions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="admissionsDropdownMenu">
+              <li><a class="dropdown-item" [routerLink]="['/payment']" >Fees and Tuition Payment
+                </a>
+              </li> 
+              <li><a class="dropdown-item" [routerLink]="['/requirements']" >Admission Requirements
+                </a>
+             </li>
+             <li><a class="dropdown-item" [routerLink]="['/application-guide']" >Appication Guidelines
+                </a>
+             </li>
+             <li><a class="dropdown-item" target="_blank" [routerLink]="['/application-guide']">Apply Online
               </a>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']" routerLInkActive="active" >Student Life </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-            Research
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
+             </li>
+             <li><a class="dropdown-item" target="_blank" href="#" >Download Application Forms
+                 </a>
+             </li>
+             <li><a class="dropdown-item" target="_blank" href="#" >Download Brochures
+             </a>
+          </li>
+  
+            </ul>
+          </li>
+          
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="studentLifeDropdownMenu" role="button" data-toggle="dropdown" aria-expanded="false"
+             [routerLink]="['/accommodation']" routerLinkActive="active">
+             Student Life
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="studentLifeDropdownMenu">
+              <li><a class="dropdown-item" [routerLink]="['/accommodation']" routerLinkActive="active">Accommodation</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/library']" routerLinkActive="active">library</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+              Research
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> 
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
+
+
+
+
+
+
+
+
+
 <router-outlet> 
 </router-outlet>
 
 
 <!-- Footer component -->
-<app-footer></app-footer>
+
+  <app-footer></app-footer>
+
